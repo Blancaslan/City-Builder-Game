@@ -3,6 +3,8 @@ import random
 building_types = ["house", "office", "factory"]
 positions = [1, 2, 3, 4]
 narcos = ["exit", "build", "destroy", "check", "taxes"]
+
+# building values for adjacent buildings
 building_values = {
     "house": 100,
     "office": 150,
@@ -175,6 +177,7 @@ def Tax():
 
     return total_taxed
 
+# function used to gather all population values from instances of building class
 def Population():
     houses_population = 0
     for house in buildings:
